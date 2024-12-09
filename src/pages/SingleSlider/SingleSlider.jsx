@@ -22,7 +22,7 @@ const SingleSlider = ({ spot }) => {
             {title}
           </h2>
           <p>{description}</p>
-          <Link to={"/"}>
+          <Link to={`/bookings/${id}`}>
             <button className="mt-[26px] flex items-center gap-[10px] text-[#000000] font-montserrat font-medium text-base bg-[#F9A51A] py-3 px-[29px] rounded-[5px]">
               Booking <FaArrowRightLong />
             </button>
