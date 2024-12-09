@@ -26,7 +26,7 @@ const WhiteNavbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content font-montserrat font-medium text-base text-white rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content font-montserrat font-medium text-base text-white bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               {navLinks}
             </ul>
