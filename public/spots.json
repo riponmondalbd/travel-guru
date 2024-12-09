@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "title": "Cox's Bazar",
+    "title": "COX'S BAZAR",
     "description": "Cox's Bazar is a renowned beach town in Bangladesh, boasting the world's longest sandy beach. It attracts tourists with its serene views, vibrant markets, and stunning sunsets, offering a perfect retreat for beach lovers.",
     "picture": "https://i.ibb.co.com/dJDb55B/Sajek.png"
   },
   {
     "id": 2,
-    "title": "Sreemangal",
+    "title": "SREEMANGAL",
     "description": "Sreemangal, in northeastern Bangladesh, is famed for its lush tea gardens, scenic landscapes, and rich biodiversity. Known as the 'Tea Capital of Bangladesh,' it is a haven for nature enthusiasts and wildlife lovers seeking tranquility.",
     "picture": "https://i.ibb.co.com/XSN8yCG/Sreemongol.png"
   },
   {
     "id": 3,
-    "title": "Sundarbans",
+    "title": "SUNDARBANS",
     "description": "The Sundarbans, a UNESCO World Heritage Site, is the largest mangrove forest on Earth. Home to the iconic Royal Bengal Tiger and diverse wildlife, it offers a unique ecosystem of unparalleled natural beauty and ecological significance.",
     "picture": "https://i.ibb.co.com/ctwF2QQ/sundorbon.png"
   }
