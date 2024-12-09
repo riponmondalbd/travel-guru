@@ -1,5 +1,5 @@
 import homeBackground from "../../assets/images/Rectangle 1.png";
-import BlackNavbar from "../shared/navbar/BlackNavbar";
+import WhiteNavbar from "../shared/navbar/WhiteNavbar";
 
 const Home = () => {
   return (
@@ -10,8 +10,7 @@ const Home = () => {
       }}
     >
       <div className="hero-overlay bg-opacity-40 bg-transparent bg-black">
-        {/* <WhiteNavbar /> */}
-        <BlackNavbar />
+        <WhiteNavbar />
       </div>
     </div>
   );

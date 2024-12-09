@@ -1,23 +1,24 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "./../../../assets/logo.png";
+import navLinks from "./NavLinks";
 
 const BlackNavbar = () => {
-  const navLinks = (
-    <>
-      <li>
-        <NavLink to={"/news"}>News</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/destination"}>Destination</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/blog"}>Blog</NavLink>
-      </li>
-      <li>
-        <NavLink to={"/contact"}>Contact</NavLink>
-      </li>
-    </>
-  );
+  //   const navLinks = (
+  //     <>
+  //       <li>
+  //         <NavLink to={"/news"}>News</NavLink>
+  //       </li>
+  //       <li>
+  //         <NavLink to={"/destination"}>Destination</NavLink>
+  //       </li>
+  //       <li>
+  //         <NavLink to={"/blog"}>Blog</NavLink>
+  //       </li>
+  //       <li>
+  //         <NavLink to={"/contact"}>Contact</NavLink>
+  //       </li>
+  //     </>
+  //   );
   return (
     <div className="max-w-7xl mx-auto">
       <div className="navbar justify-between ">
