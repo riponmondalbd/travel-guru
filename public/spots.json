@@ -9,7 +9,7 @@
       {
         "hotel_id": 101,
         "hotel_name": "Hotel Sea Crown",
-        "hotel_picture": "https://example.com/images/hotel-sea-crown.jpg",
+        "hotel_picture": "https://i.ibb.co.com/mbwnNK6/Hotel-Sea-Crown.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -22,7 +22,7 @@
       {
         "hotel_id": 102,
         "hotel_name": "Sayeman Beach Resort",
-        "hotel_picture": "https://example.com/images/sayeman-beach-resort.jpg",
+        "hotel_picture": "https://i.ibb.co.com/9r1ChbP/Sayeman-Beach-Resort.jpg",
         "guest": 4,
         "bedrooms": 2,
         "beds": 2,
@@ -35,7 +35,7 @@
       {
         "hotel_id": 103,
         "hotel_name": "Long Beach Hotel",
-        "hotel_picture": "https://example.com/images/long-beach-hotel.jpg",
+        "hotel_picture": "https://i.ibb.co.com/dKD6JmH/Long-Beach-Hotel.jpg",
         "guest": 3,
         "bedrooms": 1,
         "beds": 2,
@@ -48,7 +48,7 @@
       {
         "hotel_id": 104,
         "hotel_name": "Hotel Sea Palace",
-        "hotel_picture": "https://example.com/images/hotel-sea-palace.jpg",
+        "hotel_picture": "https://i.ibb.co.com/W2NWRXy/Hotel-Sea-Palace.jpg",
         "guest": 5,
         "bedrooms": 3,
         "beds": 4,
@@ -61,7 +61,7 @@
       {
         "hotel_id": 105,
         "hotel_name": "Ocean Paradise Hotel",
-        "hotel_picture": "https://example.com/images/ocean-paradise-hotel.jpg",
+        "hotel_picture": "https://i.ibb.co.com/y5sWCjQ/Ocean-Paradise-Hotel.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -83,7 +83,7 @@
       {
         "hotel_id": 201,
         "hotel_name": "Grand Sultan Tea Resort",
-        "hotel_picture": "https://example.com/images/grand-sultan-tea-resort.jpg",
+        "hotel_picture": "https://i.ibb.co.com/2KYDCb8/Grand-Sultan-Tea-Resort.jpg",
         "guest": 4,
         "bedrooms": 2,
         "beds": 3,
@@ -96,7 +96,7 @@
       {
         "hotel_id": 202,
         "hotel_name": "Tea Heaven Resort",
-        "hotel_picture": "https://example.com/images/tea-heaven-resort.jpg",
+        "hotel_picture": "https://i.ibb.co.com/6y8NHG5/Tea-Heaven-Resort.jpg",
         "guest": 3,
         "bedrooms": 1,
         "beds": 2,
@@ -109,7 +109,7 @@
       {
         "hotel_id": 203,
         "hotel_name": "Sreemangal Inn",
-        "hotel_picture": "https://example.com/images/sreemangal-inn.jpg",
+        "hotel_picture": "https://i.ibb.co.com/hYNfdZx/Sreemangal-Inn.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -122,7 +122,7 @@
       {
         "hotel_id": 204,
         "hotel_name": "Paradise Lodge",
-        "hotel_picture": "https://example.com/images/paradise-lodge.jpg",
+        "hotel_picture": "https://i.ibb.co.com/Mhymbnf/Paradise-Lodge.jpg",
         "guest": 5,
         "bedrooms": 3,
         "beds": 4,
@@ -135,7 +135,7 @@
       {
         "hotel_id": 205,
         "hotel_name": "Green Leaf Guest House",
-        "hotel_picture": "https://example.com/images/green-leaf-guest-house.jpg",
+        "hotel_picture": "https://i.ibb.co.com/tLG65pY/Green-Leaf-Guest-House.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -157,7 +157,7 @@
       {
         "hotel_id": 301,
         "hotel_name": "Tiger Garden Hotel",
-        "hotel_picture": "https://example.com/images/tiger-garden-hotel.jpg",
+        "hotel_picture": "https://i.ibb.co.com/nRpcm3z/Tiger-Garden-Hotel.jpg",
         "guest": 4,
         "bedrooms": 2,
         "beds": 3,
@@ -170,7 +170,7 @@
       {
         "hotel_id": 302,
         "hotel_name": "Sundarban Tiger View Resort",
-        "hotel_picture": "https://example.com/images/sundarban-tiger-view-resort.jpg",
+        "hotel_picture": "https://i.ibb.co.com/fqr1cCG/Sundarban-Tiger-View-Resort.jpg",
         "guest": 3,
         "bedrooms": 2,
         "beds": 2,
@@ -183,7 +183,7 @@
       {
         "hotel_id": 303,
         "hotel_name": "Wild Nature Hotel",
-        "hotel_picture": "https://example.com/images/wild-nature-hotel.jpg",
+        "hotel_picture": "https://i.ibb.co.com/n1Wp49W/Wild-Nature-Hotel.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -196,7 +196,7 @@
       {
         "hotel_id": 304,
         "hotel_name": "Mangrove Eco Resort",
-        "hotel_picture": "https://example.com/images/mangrove-eco-resort.jpg",
+        "hotel_picture": "https://i.ibb.co.com/RhVFskJ/angrove-Eco-Resort.jpg",
         "guest": 5,
         "bedrooms": 3,
         "beds": 4,
@@ -209,7 +209,7 @@
       {
         "hotel_id": 305,
         "hotel_name": "Sundarbans Forest Retreat",
-        "hotel_picture": "https://example.com/images/sundarbans-forest-retreat.jpg",
+        "hotel_picture": "https://i.ibb.co.com/k1gBCXK/Sundarbans-Forest-Retreat.jpg",
         "guest": 2,
         "bedrooms": 1,
         "beds": 1,
