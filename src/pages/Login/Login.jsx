@@ -1,5 +1,5 @@
-import { SiFacebook, SiGoogle } from "react-icons/si";
 import { Link } from "react-router-dom";
+import LoginGoogleGithub from "../shared/LoginGoogleGithub/LoginGoogleGithub";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
 
 const Login = () => {
@@ -50,7 +50,7 @@ const Login = () => {
               Create an account
             </button>
             <p className="text-center text-base font-montserrat font-medium mt-4">
-              Don't have account ?{" "}
+              Do not have account ?{" "}
               <Link to={"/register"} className="text-[#F9A51A] underline">
                 Create an account
               </Link>
@@ -59,18 +59,11 @@ const Login = () => {
         </form>
       </div>
 
-      <div className="divider w-1/3 mx-auto text-base font-montserrat font-medium text-[#000000]">
+      <div className="divider w-2/3 md:w-1/2 lg:w-1/3 mx-auto text-base font-montserrat font-medium text-[#000000]">
         OR
       </div>
-      <div className="w-1/3 mx-auto mt-1 mb-[60px]">
-        <button className="btn btn-outline justify-start gap-24 w-full rounded-full mb-[9px]">
-          <SiFacebook className="text-[30px]" />
-          Continue with Facebook
-        </button>
-        <button className="btn btn-outline justify-start gap-24 w-full rounded-full">
-          <SiGoogle className="text-[30px]" />
-          Continue with Google
-        </button>
+      <div className="w-2/3 md:w-1/2 lg:w-1/3 mx-auto mt-1 mb-[60px]">
+        {LoginGoogleGithub}
       </div>
     </div>
   );
