@@ -1,23 +1,224 @@
 [
   {
     "id": 1,
-    "title": "COX'S BAZAR",
+    "title": "Cox's Bazar",
     "description": "Cox's Bazar is a renowned beach town in Bangladesh, boasting the world's longest sandy beach. It attracts tourists with its serene views, vibrant markets, and stunning sunsets, offering a perfect retreat for beach lovers.",
     "picture": "https://i.ibb.co.com/dJDb55B/Sajek.png",
-    "origin": "Teknaf "
+    "origin": "Teknaf ",
+    "hotels": [
+      {
+        "hotel_id": 101,
+        "hotel_name": "Hotel Sea Crown",
+        "hotel_picture": "https://example.com/images/hotel-sea-crown.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Beachfront view", "Free Wi-Fi"],
+        "ratings": 4.5,
+        "cost_per_night": 50,
+        "total_cost": 250
+      },
+      {
+        "hotel_id": 102,
+        "hotel_name": "Sayeman Beach Resort",
+        "hotel_picture": "https://example.com/images/sayeman-beach-resort.jpg",
+        "guest": 4,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 2,
+        "special_facility": ["Infinity pool", "Private lounge"],
+        "ratings": 4.8,
+        "cost_per_night": 120,
+        "total_cost": 600
+      },
+      {
+        "hotel_id": 103,
+        "hotel_name": "Long Beach Hotel",
+        "hotel_picture": "https://example.com/images/long-beach-hotel.jpg",
+        "guest": 3,
+        "bedrooms": 1,
+        "beds": 2,
+        "baths": 1,
+        "special_facility": ["Private balcony", "Rooftop restaurant"],
+        "ratings": 4.2,
+        "cost_per_night": 80,
+        "total_cost": 400
+      },
+      {
+        "hotel_id": 104,
+        "hotel_name": "Hotel Sea Palace",
+        "hotel_picture": "https://example.com/images/hotel-sea-palace.jpg",
+        "guest": 5,
+        "bedrooms": 3,
+        "beds": 4,
+        "baths": 3,
+        "special_facility": ["Kids play zone", "Free airport shuttle"],
+        "ratings": 4.6,
+        "cost_per_night": 150,
+        "total_cost": 750
+      },
+      {
+        "hotel_id": 105,
+        "hotel_name": "Ocean Paradise Hotel",
+        "hotel_picture": "https://example.com/images/ocean-paradise-hotel.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Spa services", "Fitness center"],
+        "ratings": 4.9,
+        "cost_per_night": 100,
+        "total_cost": 500
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "SREEMANGAL",
+    "title": "Sreemangal",
     "description": "Sreemangal, in northeastern Bangladesh, is famed for its lush tea gardens, scenic landscapes, and rich biodiversity. Known as the 'Tea Capital of Bangladesh,' it is a haven for nature enthusiasts and wildlife lovers seeking tranquility.",
     "picture": "https://i.ibb.co.com/XSN8yCG/Sreemongol.png",
-    "origin": "Sylhet"
+    "origin": "Sylhet",
+    "hotels": [
+      {
+        "hotel_id": 201,
+        "hotel_name": "Grand Sultan Tea Resort",
+        "hotel_picture": "https://example.com/images/grand-sultan-tea-resort.jpg",
+        "guest": 4,
+        "bedrooms": 2,
+        "beds": 3,
+        "baths": 2,
+        "special_facility": ["Tea garden view", "Outdoor pool"],
+        "ratings": 4.7,
+        "cost_per_night": 150,
+        "total_cost": 750
+      },
+      {
+        "hotel_id": 202,
+        "hotel_name": "Tea Heaven Resort",
+        "hotel_picture": "https://example.com/images/tea-heaven-resort.jpg",
+        "guest": 3,
+        "bedrooms": 1,
+        "beds": 2,
+        "baths": 1,
+        "special_facility": ["Swimming pool", "Complimentary tea tasting"],
+        "ratings": 4.3,
+        "cost_per_night": 90,
+        "total_cost": 450
+      },
+      {
+        "hotel_id": 203,
+        "hotel_name": "Sreemangal Inn",
+        "hotel_picture": "https://example.com/images/sreemangal-inn.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Eco-friendly stay", "Outdoor BBQ area"],
+        "ratings": 4.0,
+        "cost_per_night": 50,
+        "total_cost": 250
+      },
+      {
+        "hotel_id": 204,
+        "hotel_name": "Paradise Lodge",
+        "hotel_picture": "https://example.com/images/paradise-lodge.jpg",
+        "guest": 5,
+        "bedrooms": 3,
+        "beds": 4,
+        "baths": 2,
+        "special_facility": ["Nature trails nearby", "Bicycle rentals"],
+        "ratings": 4.5,
+        "cost_per_night": 120,
+        "total_cost": 600
+      },
+      {
+        "hotel_id": 205,
+        "hotel_name": "Green Leaf Guest House",
+        "hotel_picture": "https://example.com/images/green-leaf-guest-house.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Rooftop dining", "Free Wi-Fi"],
+        "ratings": 4.4,
+        "cost_per_night": 60,
+        "total_cost": 300
+      }
+    ]
   },
   {
     "id": 3,
-    "title": "SUNDARBANS",
+    "title": "Sundarbans",
     "description": "The Sundarbans, a UNESCO World Heritage Site, is the largest mangrove forest on Earth. Home to the iconic Royal Bengal Tiger and diverse wildlife, it offers a unique ecosystem of unparalleled natural beauty and ecological significance.",
     "picture": "https://i.ibb.co.com/ctwF2QQ/sundorbon.png",
-    "origin": "Khulna"
+    "origin": "Khulna",
+    "hotels": [
+      {
+        "hotel_id": 301,
+        "hotel_name": "Tiger Garden Hotel",
+        "hotel_picture": "https://example.com/images/tiger-garden-hotel.jpg",
+        "guest": 4,
+        "bedrooms": 2,
+        "beds": 3,
+        "baths": 2,
+        "special_facility": ["Wildlife safaris", "Complimentary breakfast"],
+        "ratings": 4.6,
+        "cost_per_night": 140,
+        "total_cost": 700
+      },
+      {
+        "hotel_id": 302,
+        "hotel_name": "Sundarban Tiger View Resort",
+        "hotel_picture": "https://example.com/images/sundarban-tiger-view-resort.jpg",
+        "guest": 3,
+        "bedrooms": 2,
+        "beds": 2,
+        "baths": 1,
+        "special_facility": ["Boat tours", "Eco-friendly accommodation"],
+        "ratings": 4.5,
+        "cost_per_night": 130,
+        "total_cost": 650
+      },
+      {
+        "hotel_id": 303,
+        "hotel_name": "Wild Nature Hotel",
+        "hotel_picture": "https://example.com/images/wild-nature-hotel.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Mangrove view", "Private guide"],
+        "ratings": 4.3,
+        "cost_per_night": 100,
+        "total_cost": 500
+      },
+      {
+        "hotel_id": 304,
+        "hotel_name": "Mangrove Eco Resort",
+        "hotel_picture": "https://example.com/images/mangrove-eco-resort.jpg",
+        "guest": 5,
+        "bedrooms": 3,
+        "beds": 4,
+        "baths": 3,
+        "special_facility": ["Eco-tours", "Local cuisine dining"],
+        "ratings": 4.8,
+        "cost_per_night": 160,
+        "total_cost": 800
+      },
+      {
+        "hotel_id": 305,
+        "hotel_name": "Sundarbans Forest Retreat",
+        "hotel_picture": "https://example.com/images/sundarbans-forest-retreat.jpg",
+        "guest": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "baths": 1,
+        "special_facility": ["Guided trekking", "Free airport pickup"],
+        "ratings": 4.7,
+        "cost_per_night": 110,
+        "total_cost": 550
+      }
+    ]
   }
 ]

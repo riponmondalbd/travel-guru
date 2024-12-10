@@ -29,12 +29,17 @@ const SingleSlider = ({ spot }) => {
             </button>
           </Link>
         </div>
-        <div className="mb-24 flex justify-center">
-          <img
-            className="h-[300px] md:h-[416px] border-[4px] border-[#FBBC04]  rounded-[25px]"
-            src={picture}
-            alt=""
-          />
+        <div className="mb-28">
+          <div className="flex justify-center">
+            <img
+              className="h-[300px] md:h-[416px] border-[4px] border-[#FBBC04]  rounded-[25px]"
+              src={picture}
+              alt=""
+            />
+          </div>
+          <p className="text-4xl font-bebas-neue font-normal text-center mt-[-60px]">
+            {title}
+          </p>
         </div>
       </div>
       <div className="absolute left-40 md:left-2/3 gap-3 bottom-0 flex -translate-y-1/2 transform justify-between">
