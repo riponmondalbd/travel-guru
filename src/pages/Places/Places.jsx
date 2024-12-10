@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import googleMap from "../../assets/images/googlemap.png";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
 import SingleHotel from "../SingleHotel/SingleHotel";
 
@@ -9,7 +10,7 @@ const Places = () => {
   const singlePlace = places.find((place) => place.id == id);
   const { title, hotels } = singlePlace;
 
-  console.log(hotels);
+  //   console.log(hotels);
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
@@ -24,7 +25,7 @@ const Places = () => {
           ))}
         </div>
         <div>
-          <h2>hello</h2>
+          <img src={googleMap} alt="" />
         </div>
       </div>
     </div>
