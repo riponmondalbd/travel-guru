@@ -70,7 +70,7 @@ const Register = () => {
         OR
       </div>
       <div className="w-2/3 md:w-1/2 lg:w-1/3 mx-auto mt-1 mb-[60px]">
-        {LoginGoogleGithub}
+        <LoginGoogleGithub />
       </div>
     </div>
   );
