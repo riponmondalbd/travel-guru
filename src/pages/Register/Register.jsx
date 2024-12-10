@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
-      <div className="md:w-2/3 lg:w-1/2 mx-auto border py-9 px-14 mt-[60px]">
+      <div className="md:w-2/3 lg:w-1/2 mx-auto border py-9 px-5 md:px-14 mt-[60px]">
         <h2 className="text-2xl font-montserrat font-bold mb-[50px]">
           Create an account
         </h2>

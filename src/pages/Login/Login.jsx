@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
-      <div className="md:w-2/3 lg:w-1/2 mx-auto border py-9 px-14 mt-[60px]">
+      <div className="md:w-2/3 lg:w-1/2 mx-auto border py-9 px-5 md:px-14 mt-[60px]">
         <h2 className="text-2xl font-montserrat font-bold mb-[50px]">Login</h2>
         <form className="card-body p-0 space-y-11">
           <div className="form-control ">
