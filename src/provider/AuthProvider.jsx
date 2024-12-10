@@ -1,4 +1,5 @@
 import {
+  createUserWithEmailAndPassword,
   getAuth,
   GithubAuthProvider,
   GoogleAuthProvider,
@@ -36,7 +37,14 @@ const AuthProvider = ({ children }) => {
 
   //   logout
   const logOut = () => {
+    setLoader(true);
     return signOut(auth);
+  };
+
+  //   create an user
+  const createUser = (email, password) => {
+    setLoader(true);
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   //   get current user state
@@ -52,7 +60,14 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
-  const authInfo = { user, loader, googleLogin, gitHubLogin, logOut };
+  const authInfo = {
+    user,
+    loader,
+    googleLogin,
+    gitHubLogin,
+    logOut,
+    createUser,
+  };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

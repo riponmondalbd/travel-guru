@@ -1,14 +1,18 @@
+import { useState } from "react";
+import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { Link } from "react-router-dom";
 import LoginGoogleGithub from "../shared/LoginGoogleGithub/LoginGoogleGithub";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
       <div className="md:w-2/3 lg:w-1/2 mx-auto border py-9 px-5 md:px-14 mt-[60px]">
         <h2 className="text-2xl font-montserrat font-bold mb-[50px]">Login</h2>
-        <form className="card-body p-0 space-y-11">
+        <form className="card-body p-0 space-y-11 relative">
           <div className="form-control ">
             <input
               type="email"
@@ -19,11 +23,18 @@ const Login = () => {
           </div>
           <div className="form-control ">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               className="input input-bordered border-t-0 border-x-0 rounded-none px-0 text-base font-montserrat font-medium text-black"
               required
             />
+            <span
+              className="absolute right-2 bottom-[210px] md:bottom-[190px]"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <IoMdEyeOff /> : <IoMdEye />}
+            </span>
+
             <div className="flex justify-between">
               <div className="flex items-center gap-[10px]">
                 <input type="checkbox" name="remember" id="remember" />
