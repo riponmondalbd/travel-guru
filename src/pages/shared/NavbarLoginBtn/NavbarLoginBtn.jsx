@@ -9,7 +9,7 @@ const NavbarLoginBtn = () => {
     logOut().then().catch();
   };
 
-  console.log(user);
+  //   console.log(user);
   return (
     <div>
       {user ? (
@@ -25,13 +25,21 @@ const NavbarLoginBtn = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a onClick={handleLogOut}>Logout</a>
+                <a
+                  className="font-montserrat text-base font-medium"
+                  onClick={handleLogOut}
+                >
+                  Logout
+                </a>
               </li>
             </ul>
           </div>
         </>
       ) : (
-        <Link className="btn btn-warning" to={"/login"}>
+        <Link
+          className="btn btn-warning font-montserrat text-base font-medium"
+          to={"/login"}
+        >
           Login
         </Link>
       )}

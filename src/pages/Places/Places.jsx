@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
+import SingleHotel from "../SingleHotel/SingleHotel";
 
 const Places = () => {
   const { id } = useParams();
@@ -12,7 +13,20 @@ const Places = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
-      <h2>Stay in {title}</h2>
+      <div className="divider"></div>
+      <h2 className="text-2xl font-montserrat font-bold my-8">
+        Stay in {title}
+      </h2>
+      <div className="grid lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          {hotels.map((hotel) => (
+            <SingleHotel key={hotel.hotel_id} hotel={hotel}></SingleHotel>
+          ))}
+        </div>
+        <div>
+          <h2>hello</h2>
+        </div>
+      </div>
     </div>
   );
 };
