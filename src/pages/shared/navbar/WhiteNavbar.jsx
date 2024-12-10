@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/Frame.png";
-import { logInBtn, navLinks } from "./NavLinks";
+import NavbarLoginBtn from "../NavbarLoginBtn/NavbarLoginBtn";
+import { navLinks } from "./NavLinks";
 
 const WhiteNavbar = () => {
   return (
@@ -61,7 +62,9 @@ const WhiteNavbar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="navbar-end">{logInBtn}</div>
+          <div className="navbar-end">
+            <NavbarLoginBtn />
+          </div>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navLinks = (
   <>
@@ -17,10 +17,4 @@ const navLinks = (
   </>
 );
 
-const logInBtn = (
-  <Link className="btn btn-warning" to={"/login"}>
-    Login
-  </Link>
-);
-
-export { logInBtn, navLinks };
+export { navLinks };
