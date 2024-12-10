@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -56,6 +57,15 @@ const SingleSlider = ({ spot }) => {
       </div>
     </div>
   );
+};
+
+SingleSlider.propTypes = {
+  spot: PropTypes.shape({
+    title: PropTypes.node,
+    description: PropTypes.node,
+    picture: PropTypes.node,
+    id: PropTypes.node,
+  }),
 };
 
 export default SingleSlider;

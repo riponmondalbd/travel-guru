@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import homeBackground from "../../assets/images/Rectangle 1.png";
 import WhiteNavbar from "../shared/navbar/WhiteNavbar";
 
@@ -30,7 +30,7 @@ const Bookings = () => {
       <div className="hero-overlay bg-opacity-70  bg-black">
         <div className="max-w-7xl mx-auto">
           <WhiteNavbar />
-          <div className="text-base-100 grid md:grid-cols-2 gap-28 px-2 lg:px-0 mt-[134px]">
+          <div className="text-base-100 grid items-center md:grid-cols-2 gap-28 px-2 lg:px-0 mt-[134px]">
             <div>
               <h2 className="text-[80px] lg:text-[99px] font-bebas-neue font-normal">
                 {title}
@@ -108,9 +108,11 @@ const Bookings = () => {
                     </div>
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn font-montserrat text-base bg-[#F9A51A] ">
-                      Start Booking
-                    </button>
+                    <Link>
+                      <button className="btn font-montserrat text-base bg-[#F9A51A] w-full">
+                        Start Booking
+                      </button>
+                    </Link>
                   </div>
                 </form>
               </div>
