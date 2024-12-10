@@ -108,7 +108,7 @@ const Bookings = () => {
                     </div>
                   </div>
                   <div className="form-control mt-6">
-                    <Link>
+                    <Link to={`/places/${id}`}>
                       <button className="btn font-montserrat text-base bg-[#F9A51A] w-full">
                         Start Booking
                       </button>

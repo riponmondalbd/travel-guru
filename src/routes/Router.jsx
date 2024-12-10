@@ -4,6 +4,7 @@ import Bookings from "../pages/Bookings/Bookings";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
+import Places from "../pages/Places/Places";
 import Register from "../pages/Register/Register";
 
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
         path: "/bookings/:id",
         loader: () => fetch("/spots.json"),
         element: <Bookings />,
+      },
+      {
+        path: "/Places/:id",
+        loader: () => fetch("/spots.json"),
+        element: <Places />,
       },
       {
         path: "/register",
