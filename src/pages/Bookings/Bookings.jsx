@@ -1,4 +1,7 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import { useLoaderData, useParams } from "react-router-dom";
 import homeBackground from "../../assets/images/Rectangle 1.png";
 import WhiteNavbar from "../shared/navbar/WhiteNavbar";
@@ -11,6 +14,12 @@ const Bookings = () => {
   const { title, description, origin } = singleSpot;
 
   //   console.log(spots, id, singleSpot);
+  //   const [startDate, setStartDate] = useState(new Date());
+  //   const [endDate, setEndDate] = useState(new Date());
+
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
+
   return (
     <div
       className="hero min-h-screen"
@@ -66,11 +75,16 @@ const Bookings = () => {
                             From
                           </span>
                         </label>
-                        <input
-                          type="text"
-                          placeholder="password"
-                          className="input input-bordered w-full font-bold"
-                          required
+                        {/* <DatePicker
+                          className="text-black input input-bordered w-full font-bold"
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                        /> */}
+                        <DatePicker
+                          className="text-black input input-bordered w-full font-bold"
+                          selected={startDate}
+                          onChange={(date) => setStartDate(date)}
+                          minDate={new Date()}
                         />
                       </div>
                       <div>
@@ -79,17 +93,24 @@ const Bookings = () => {
                             To
                           </span>
                         </label>
-                        <input
-                          type="text"
-                          placeholder="password"
-                          className="input input-bordered w-full font-bold"
-                          required
+                        {/* <DatePicker
+                          className="text-black input input-bordered w-full font-bold"
+                          selected={endDate}
+                          onChange={(date) => setEndDate(date)}
+                        /> */}
+                        <DatePicker
+                          className="text-black input input-bordered w-full font-bold"
+                          selected={endDate}
+                          onChange={(date) => setEndDate(date)}
+                          minDate={new Date()}
                         />
                       </div>
                     </div>
                   </div>
                   <div className="form-control mt-6">
-                    <button className="btn btn-primary">Login</button>
+                    <button className="btn font-montserrat text-base bg-[#F9A51A] ">
+                      Start Booking
+                    </button>
                   </div>
                 </form>
               </div>
