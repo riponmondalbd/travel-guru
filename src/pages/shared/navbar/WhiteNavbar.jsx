@@ -62,7 +62,7 @@ const WhiteNavbar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="navbar-end">
+          <div className="navbar-end text-white">
             <NavbarLoginBtn />
           </div>
         </div>
