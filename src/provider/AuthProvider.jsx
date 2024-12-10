@@ -1,4 +1,9 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  GithubAuthProvider,
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
 import PropTypes from "prop-types";
 import { createContext, useState } from "react";
 import app from "../firebase/firebase.config";
@@ -12,6 +17,7 @@ const AuthProvider = ({ children }) => {
   const [loader, setLoader] = useState(true);
 
   const googleProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
 
   //   login user using google
   const googleLogin = () => {
@@ -19,7 +25,13 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, googleProvider);
   };
 
-  const authInfo = { user, loader, googleLogin };
+  //   login user using github
+  const gitHubLogin = () => {
+    setLoader(true);
+    return signInWithPopup(auth, githubProvider);
+  };
+
+  const authInfo = { user, loader, googleLogin, gitHubLogin };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
