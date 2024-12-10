@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -6,11 +6,12 @@ import LoginGoogleGithub from "../shared/LoginGoogleGithub/LoginGoogleGithub";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
 
 const Login = () => {
-  const { login } = useContext(AuthContext);
+  const { login, resetPassword } = useContext(AuthContext);
 
   const [showPassword, setShowPassword] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const emailRef = useRef(null);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -35,6 +36,29 @@ const Login = () => {
       });
   };
 
+  const handleResetPassword = () => {
+    const email = emailRef.current.value;
+
+    if (!email) {
+      setErrorMessage("Please provide an email");
+      return;
+    } else if (
+      !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)
+    ) {
+      setErrorMessage("Please write a valid email");
+      return;
+    }
+
+    // send email validation
+    resetPassword(email)
+      .then(() => {
+        setSuccessMessage("Please check your email");
+      })
+      .catch((error) => {
+        setErrorMessage(error.message);
+      });
+  };
+
   return (
     <div className="max-w-7xl mx-auto">
       <BlackNavbar />
@@ -47,6 +71,7 @@ const Login = () => {
           <div className="form-control ">
             <input
               type="email"
+              ref={emailRef}
               placeholder="Username or Email"
               name="email"
               className="input input-bordered border-t-0 border-x-0 rounded-none px-0 text-base font-montserrat font-medium text-black"
@@ -80,7 +105,7 @@ const Login = () => {
               </div>
               <label className="label">
                 <a
-                  href="#"
+                  onClick={handleResetPassword}
                   className="label-text-alt link link-hover text-[#F9A51A] underline text-base font-montserrat font-medium"
                 >
                   Forgot password?

@@ -4,6 +4,7 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -54,6 +55,12 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
+  //   email password reset
+  const resetPassword = (email) => {
+    setLoader(true);
+    return sendPasswordResetEmail(auth, email);
+  };
+
   //   get current user state
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -75,6 +82,7 @@ const AuthProvider = ({ children }) => {
     logOut,
     createUser,
     login,
+    resetPassword,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
