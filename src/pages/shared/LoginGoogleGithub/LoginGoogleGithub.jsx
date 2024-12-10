@@ -1,15 +1,19 @@
 import { useContext } from "react";
 import { SiGithub, SiGoogle } from "react-icons/si";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
 
 const LoginGoogleGithub = () => {
   const { googleLogin, gitHubLogin } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   //   google login
   const handleGoogleLogin = () => {
     googleLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
@@ -19,8 +23,9 @@ const LoginGoogleGithub = () => {
   //   github login
   const handleGithubLogin = () => {
     gitHubLogin()
-      .then((result) => {
-        console.log(result.user);
+      .then(() => {
+        // console.log(result.user);
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);

@@ -6,13 +6,10 @@ const navLinks = (
       <NavLink to={"/news"}>News</NavLink>
     </li>
     <li>
-      <NavLink to={"/destination"}>Destination</NavLink>
-    </li>
-    <li>
       <NavLink to={"/blog"}>Blog</NavLink>
     </li>
     <li>
-      <NavLink to={"/contact"}>Contact</NavLink>
+      <NavLink to={"/register"}>Contact</NavLink>
     </li>
   </>
 );

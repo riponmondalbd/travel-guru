@@ -53,7 +53,6 @@ const Register = () => {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
         setSuccessMessage("User create Successfully");
         updateProfile(result.user, {
           displayName: firstName + " " + lastName,

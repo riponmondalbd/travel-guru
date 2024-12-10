@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import LoginGoogleGithub from "../shared/LoginGoogleGithub/LoginGoogleGithub";
 import BlackNavbar from "../shared/navbar/BlackNavbar";
@@ -12,6 +12,8 @@ const Login = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const emailRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -30,6 +32,8 @@ const Login = () => {
       .then(() => {
         setSuccessMessage("Login Successfully");
         e.target.reset();
+
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         setErrorMessage(error.message);
