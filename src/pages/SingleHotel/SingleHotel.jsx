@@ -1,8 +1,8 @@
+import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa6";
 
 const SingleHotel = ({ hotel }) => {
   const {
-    hotel_id,
     hotel_name,
     hotel_picture,
     guest,
@@ -53,6 +53,10 @@ const SingleHotel = ({ hotel }) => {
       </div>
     </div>
   );
+};
+
+SingleHotel.propTypes = {
+  hotel: PropTypes.object,
 };
 
 export default SingleHotel;
